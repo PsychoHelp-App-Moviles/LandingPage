@@ -128,7 +128,6 @@ header {
     transform: translateX(-100%);
     transition: transform .5s;
     align-items: center;
-    margin-left: 30px;
 }
 
 .nav::before {
@@ -214,7 +213,7 @@ header {
 .work-with-us {
     font-size: 2rem;
     font-family: var(--secondary-font);
-    color: white;
+    color: black;
     animation: fadeUp .5s forwards;
     animation-delay: .5s;
 }
@@ -239,7 +238,7 @@ header {
 .headline-alt {
     color: white;
     font-size: 3rem;
-    font-family: var(--alt-font);
+    font-family: var(--body-font);
     text-transform: uppercase;
     letter-spacing: .3rem;
     font-weight: 900;
@@ -319,27 +318,40 @@ header {
     margin-right: 16px;
 }
 
+.cta-btn{
+    font-size:15px;
+    background-color:#fff;
+    padding:.9rem 1.8rem;
+    color:var(--body-font-color);
+    border-radius:.4rem;
+    transition:background-color .5s;
+}
+
+.cta-btn:hover,
+.cta-btn:focus{
+    color:#fff;
+    background-color:var(--secondary-font-color);
+}
+
 .cta-btn-google {
     font-size: 1.1rem;
-    background-color: #fff;
     color: var(--body-font-color);
     border-radius: .4rem;
     transition: background-color .5s;
-    width: 250px;
     background: transparent;
-    margin-right: 40px;
+    width: 250px;
+    margin-right: 20px;
 }
 
 .cta-btn-app {
     font-size: 1.1rem;
-    background-color: #fff;
     color: var(--body-font-color);
     border-radius: .4rem;
     transition: background-color .5s;
-    width: 250px;
     background: transparent;
-    margin-left: 40px;
+    width: 250px;
     margin-right: 0px;
+    margin-left: 20px;
 }
 
 
@@ -347,7 +359,8 @@ header {
     object-fit: cover;
     background: transparent;
 }
-.img-google {
+
+.img-appstore {
     object-fit: cover;
     background: transparent;
 }
@@ -358,8 +371,14 @@ header {
 
 }
 
+.background-font1{
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
 .what-is-psycho .global-headline {
     margin-top: 6.9rem;
+
 }
 
 .global-headline .asterisk {
@@ -375,7 +394,7 @@ header {
 }
 
 .headline-light {
-    color: #525151;
+    color: black;
     letter-spacing: 0;
     margin-right: 0;
     margin-top: 2rem;
@@ -399,6 +418,11 @@ header {
     margin-bottom: 2.4rem;
 }
 
+.btn-callToActions {
+    display: flex;
+    justify-content: center;
+}
+
 .body-btn {
     font-size: 1.5rem;
     color: var(--secondary-font-color);
@@ -419,6 +443,8 @@ header {
 .publish-psycho-div {
     background: url("images/reserv.jpg")center no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
 
 .between {
@@ -729,6 +755,34 @@ footer {
 
     img {
         max-width: 50%;
+    }
+
+    .btn-callToActions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cta-btn-google {
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    .cta-btn-app {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+    .image-group1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
 }
